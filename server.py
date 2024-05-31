@@ -14,7 +14,7 @@ file_path = "/disorder/git/Git.md"
 # 每天更新仓库所有的笔记
 # 1. 更新structure的notes项
 # 2. 更新structure的tree项
-def updateRepository:
+def updateRepository():
     print("update notes")
     print("update tree")
 
