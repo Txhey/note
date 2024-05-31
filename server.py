@@ -20,7 +20,7 @@ def updateRepository():
 
 updateRepository()
 
-def test:
+def test():
     # 获取文件的 commit 历史 URL
     commits_url = f"{base_url}/repos/{owner}/{repo}/commits?path={file_path}"
 
