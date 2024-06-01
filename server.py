@@ -14,14 +14,6 @@ owner = "Txhey"
 repo = "note"
 
 
-# 每天更新仓库所有的笔记
-# 1. 更新structure的notes项
-# 2. 更新structure的tree项
-def updateRepository():
-    print("update structure json file")
-    update_structure_json()
-updateRepository()
-
 def update_structure_json():
     file_info_list = []
     for s in os.listdir('.\\main'):
@@ -80,3 +72,12 @@ def get_tag_list(file_path):
         content = f.read()
         re.sub(r'\s*?,\s*?',",",content)
         return content.split(',')
+
+
+# 每天更新仓库所有的笔记
+# 1. 更新structure的notes项
+# 2. 更新structure的tree项
+def updateRepository():
+    print("update structure json file")
+    update_structure_json()
+updateRepository()

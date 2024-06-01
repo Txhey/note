@@ -1,46 +1,28 @@
 {
-    "notes": [
+    "main": [
         {
-            "title": "github Test Title 1",
-            "abstract": "文件的简介，每次修改都会来修改一次abstract，需要把*这种符号去除掉，只保留文字内容",
+            "title": "Fantastic idea",
+            "abstract": "",
             "tagList": [
                 "tag1",
-                "tag2",
-                "标签列表数组"
+                "    tag2   ",
+                "tag3"
             ],
-            "createTime": "2024-03-10 12:23:00",
-            "lastModify": "2024-03-10 12:23:00",
-            "view": 128
+            "createTime": "2024-05-31 20:11:58",
+            "lastModify": "2024-05-31 19:29:07",
+            "view": 0
         },
         {
-            "title": "github Test Title 2 : lone",
-            "abstract": "文件的简介，每次修改都会来修改一次abstract，需要把*这种符号去除掉，只保留文字内容",
+            "title": "git",
+            "abstract": "Git 查看git版本 文件状态 config 查看全局配置 修改用户名和密码 修改代理 创建仓库 初始化一个新的仓库 从远端服务器克隆一个过来 工作区域 *工作区：working Directory*暂存区：Staging Area/Index*本地仓库： Local Repository ![image-20240527160200242](./img/work_area.png) 状态： *",
             "tagList": [
                 "tag1",
-                "tag2",
-                "tag333"
+                "tag21",
+                "tag32"
             ],
-            "createTime": "2024-03-10 12:23:00",
-            "lastModify": "2024-03-10 12:23:00",
-            "view": 128
+            "createTime": "2024-05-31 20:11:58",
+            "lastModify": "2024-05-28 16:59:32",
+            "view": 0
         }
-    ],
-    "tree": {
-        "name": "root",
-        "sub": [
-            {
-                "name": "AI",
-                "sub": [
-                    {
-                        "name": "机器学习",
-                        "sub": []
-                    }
-                ]
-            },
-            {
-                "name": "math",
-                "sub": []
-            }
-        ]
-    }
+    ]
 }
