@@ -20,7 +20,7 @@ repo = "note"
 def updateRepository():
     print("update structure json file")
     update_structure_json()
-
+updateRepository()
 
 def update_structure_json():
     file_info_list = []
