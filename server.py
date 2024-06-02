@@ -56,7 +56,7 @@ def update_structure_json():
             "tagList": tag_list,
             "createTime": create_time_str,
             "lastModify": last_modify_str,
-            "img": f"https://raw.githubusercontent.com/Txhey/note/main/main/{title}/img/{img_cover_name}",
+            "img": f"https://raw.githubusercontent.com/Txhey/note/main/main/{s}/img/{img_cover_name}",
             "view": 0  # 默认浏览量为0
         }
         file_info_list.append(file_info)
