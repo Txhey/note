@@ -51,6 +51,8 @@ def update_structure_json():
         img_cover_name = get_file_patten(cover_file_path)
         all_tag_set.update(tag_list)
         file_info = {
+            "folderName": s,
+            "fileName": md_file_name,
             "title": title,
             "abstract": abstract,
             "tagList": tag_list,
