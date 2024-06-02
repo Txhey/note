@@ -2,27 +2,32 @@
     "main": [
         {
             "title": "Fantastic idea",
-            "abstract": "",
-            "tagList": [
-                "tag1",
-                "    tag2   ",
-                "tag3"
-            ],
+            "abstract": "NLP 虽然文字是序列数据，但是我们平时使用文字都是通过看，也就是文字其实是二维数据，比如字体大小、双引号、周围空格、重复出现等都会导致我们对某个文字或者某个词的关注增加，如果采用听文字的方式，也就变成了间隔、语调、音量、前面的内容预警（我喜欢的人是：***\\****） 所以其实可以尝试使用二维网络，类似图片，加粗的文字占用更多的空间（其他文字1×1，加粗1×2）或者其他方式。一行文字就是一行数据",
+            "tagList": [],
             "createTime": "2024-05-31 20:11:58",
-            "lastModify": "2024-05-31 19:29:07",
+            "lastModify": "2024-06-01 17:12:39",
+            "img": "https://raw.githubusercontent.com/Txhey/note/main/main/Fantastic idea/img/cover.png",
             "view": 0
         },
         {
             "title": "git",
-            "abstract": "Git 查看git版本 文件状态 config 查看全局配置 修改用户名和密码 修改代理 创建仓库 初始化一个新的仓库 从远端服务器克隆一个过来 工作区域 *工作区：working Directory*暂存区：Staging Area/Index*本地仓库： Local Repository ![image-20240527160200242](./img/work_area.png) 状态： *",
-            "tagList": [
-                "tag1",
-                "tag21",
-                "tag32"
-            ],
+            "abstract": "Git 查看git版本 文件状态 config 查看全局配置 修改用户名和密码 修改代理 创建仓库 初始化一个新的仓库 从远端服务器克隆一个过来 工作区域 *工作区：working Directory*暂存区：Staging Area/Index*本地仓库： Local Repository 状态： *Untrack 未跟踪：还没被git管理的文件*Unmodified 未修改*Modified ",
+            "tagList": [],
             "createTime": "2024-05-31 20:11:58",
             "lastModify": "2024-05-28 16:59:32",
+            "img": "https://raw.githubusercontent.com/Txhey/note/main/main/git/img/cover.png",
+            "view": 0
+        },
+        {
+            "title": "test",
+            "abstract": "title title title3 *order1*2order*3*4*5",
+            "tagList": [],
+            "createTime": "2024-06-01 21:05:08",
+            "lastModify": "2024-06-01 21:09:11",
+            "img": "https://raw.githubusercontent.com/Txhey/note/main/main/test/img/cover.png",
             "view": 0
         }
-    ]
+    ],
+    "noteNum": 3,
+    "allTagList": []
 }

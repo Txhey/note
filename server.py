@@ -16,10 +16,11 @@ repo = "note"
 
 def update_structure_json():
     file_info_list = []
+    all_tag_set = set()
     for s in os.listdir('.\\main'):
         folder_path = os.path.join(".\\main", s)
         md_file_path = os.path.join(folder_path, s + ".md")
-        tag_file_path = os.path.join(folder_path, 'tag')
+        info_file_path = os.path.join(folder_path, 'info.json')
         # 获取title
         title = s
         # 获取文件创建时间和最后修改时间
@@ -30,18 +31,22 @@ def update_structure_json():
         # 获取文件的摘要
         abstract = extract_text_from_md(md_file_path)
         # 获取tagList
-        tag_list = get_tag_list(tag_file_path)
+        tag_list = get_tag_info(info_file_path)
+        all_tag_set.update(tag_list)
         file_info = {
             "title": title,
             "abstract": abstract,
             "tagList": tag_list,
             "createTime": create_time_str,
             "lastModify": last_modify_str,
+            "img": f"https://raw.githubusercontent.com/Txhey/note/main/main/{title}/img/cover.png",
             "view": 0  # 默认浏览量为0
         }
         file_info_list.append(file_info)
     json_data = {
         "main": file_info_list,
+        "noteNum": len(file_info_list),
+        "allTagList": list(all_tag_set)
     }
     print(json_data)
     # 将 JSON 数据写入文件
@@ -56,22 +61,30 @@ def extract_text_from_md(file_path):
         html = f.read()
         # 标题去除#
         html = re.sub(r'#* (.*?)[\r\n]', r"\1", html)
+        # 去掉列表
+        html = re.sub(r'\* (.*?)[\r\n]', r'\1', html)
         # 去除表格
         html = re.sub(r'\|.*?\|.*?\n', "", html)
         # 去除代码块
         html = re.sub(r'```.*?```|~~~.*?~~~', "", html, flags=re.DOTALL)
+        # 去掉图片
+        html = re.sub(r'!\[.*?\]\(.*?\)', " ", html, flags=re.DOTALL)
         # 去除换行、空行、制表符
         html = re.sub(r'\s+', " ", html)
-
         return html.strip()[:200]
 
 
-# 获取tagList
-def get_tag_list(file_path):
-    with open(file_path, 'r', encoding='utf-8') as f:
-        content = f.read()
-        re.sub(r'\s*?,\s*?',",",content)
-        return content.split(',')
+# 获取tagInfo
+def get_tag_info(file_path):
+    if not os.path.exists(file_path):
+        with open(file_path, 'w') as file:
+            file.write('{"tagList": []}')
+            return []
+    else:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            json_data = json.load(f)
+            tags_list = json_data["tagList"]
+            return tags_list
 
 
 # 每天更新仓库所有的笔记
@@ -80,4 +93,6 @@ def get_tag_list(file_path):
 def updateRepository():
     print("update structure json file")
     update_structure_json()
+
+
 updateRepository()
