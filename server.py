@@ -1,5 +1,6 @@
 import requests
 import os
+import glob
 import json
 import re
 from datetime import datetime
@@ -14,6 +15,17 @@ owner = "Txhey"
 repo = "note"
 
 
+def find_cover_image(file_path):
+    # 使用通配符查找文件夹中名为 cover 的文件
+    matching_files = glob.glob(file_path)
+
+    # 如果找到匹配的文件，返回第一个文件的名称
+    if matching_files:
+        return os.path.basename(matching_files[0])
+    else:
+        return None
+
+
 def update_structure_json():
     file_info_list = []
     all_tag_set = set()
@@ -21,6 +33,7 @@ def update_structure_json():
         folder_path = os.path.join(".\\main", s)
         md_file_path = os.path.join(folder_path, s + ".md")
         info_file_path = os.path.join(folder_path, 'info.json')
+        cover_file_path = os.path.join(folder_path, 'img\\cover.*')
         # 获取title
         title = s
         # 获取文件创建时间和最后修改时间
@@ -32,6 +45,8 @@ def update_structure_json():
         abstract = extract_text_from_md(md_file_path)
         # 获取tagList
         tag_list = get_tag_info(info_file_path)
+        # 获取cover图片名字
+        img_cover_name = find_cover_image(cover_file_path)
         all_tag_set.update(tag_list)
         file_info = {
             "title": title,
@@ -39,7 +54,7 @@ def update_structure_json():
             "tagList": tag_list,
             "createTime": create_time_str,
             "lastModify": last_modify_str,
-            "img": f"https://raw.githubusercontent.com/Txhey/note/main/main/{title}/img/cover.png",
+            "img": f"https://raw.githubusercontent.com/Txhey/note/main/main/{title}/img/{img_cover_name}",
             "view": 0  # 默认浏览量为0
         }
         file_info_list.append(file_info)
