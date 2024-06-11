@@ -8,6 +8,14 @@
 
 [pytorch](../pytorch/pytorch.md)
 
+[huawei杯](..\“华为杯”研究生数学建模竞赛\“华为杯”数学建模竞赛.md)
+
+[Transformer](..\教程 Transformer\教程：Transformer.md)
+
+[test](..\test\test.md)
+
+[kaggle](..\kaggle 教程\kaggle.md)
+
 Sometimes we need state that depends on other state - in Vue this is handled with component computed properties. To directly create a computed value, we can use the computed function: it takes a getter function and returns an immutable reactive ref object for the returned value from the getter.
 
 ```vue
