@@ -6,6 +6,10 @@
 
 * blog 笔记管理（存储、索引、查看）
   * view 查看笔记 (还可查看该笔记的其他附件 pdf等)
+    * 左边是文件目录，中间主要查看的文件(markdown)内容，右上角悬浮菜单目录，右边是副浏览页，右上角可关闭。
+    * 点击左边的文件，比如pdf后，将会在右边展示以作参考。
+    * 点击md文件内容的其他笔记内容链接时，也将展示到右边。
+      * 实现：每次查看链接是否是note仓库的文件，如果是，则将链接更改为当前连接并添加参数：referenceFilePath
 * plan 计划管理  (每日计划、目标计划等)
 * me 个人简历
 * home 主页
@@ -506,6 +510,79 @@ import PDF from "pdf-vue3";
 }
 </style>
 ```
+
+
+
+
+
+#### 点击网址不跳转
+
+```vue
+<template>
+    <div>
+        <!-- 使用 md-editor-v3 渲染 Markdown 内容 -->
+        <MdPreview v-model="markdownContent" previewOnly @onHtmlChanged="handleHtmlChange" />
+    </div>
+</template>
+
+<script setup>
+import { ref, onMounted } from 'vue';
+import { MdPreview, MdCatalog } from "md-editor-v3";
+import 'md-editor-v3/lib/style.css';
+
+const markdownContent = ref(`# 示例 Markdown
+
+[访问 Baidu](https://www.baidu.com)
+
+[访问 Example](https://www.example.com)
+
+[访问 Another Example](https://www.anotherexample.com)
+
+[GitHub API Example](https://api.github.com/users/octocat)
+`);
+
+const handleHtmlChange = () => {
+  const links = document.querySelectorAll('.md-editor-preview a');
+  links.forEach(link => {
+    // 移除之前添加的事件监听器
+    link.removeEventListener('click', handleClick);
+    // 添加新的事件监听器
+    link.addEventListener('click', handleClick);
+  });
+};
+
+const handleClick = (event) => {
+  const url = event.target.href;
+
+  if (url === 'https://www.baidu.com') {
+    // 如果链接是 www.baidu.com，就正常跳转
+    return;
+  } else if (url.startsWith('https://api.github.com')) {
+    // 如果链接以 https://api.github.com 开头，打印内容
+    event.preventDefault();
+    console.log(`链接地址是: ${url}`);
+  } else {
+    // 其他链接也阻止默认行为
+    event.preventDefault();
+    console.log(`其他链接地址: ${url}`);
+  }
+};
+
+// 在组件挂载时处理初始渲染内容的链接
+onMounted(handleHtmlChange);
+</script>
+
+<style>
+a {
+    color: blue;
+    text-decoration: underline;
+}
+</style>
+```
+
+
+
+
 
 
 

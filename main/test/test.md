@@ -4,6 +4,10 @@
 
 # Computed values
 
+
+
+[pytorch](../pytorch/pytorch.md)
+
 Sometimes we need state that depends on other state - in Vue this is handled with component computed properties. To directly create a computed value, we can use the computed function: it takes a getter function and returns an immutable reactive ref object for the returned value from the getter.
 
 ```vue
