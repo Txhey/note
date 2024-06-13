@@ -30,9 +30,12 @@ def update_structure_json():
     file_info_list = []
     all_tag_set = set()
     for s in os.listdir('.\\main'):
+        if s.startswith('.'):
+            continue
         folder_path = os.path.join(".\\main", s)
         md_file_path = os.path.join(folder_path, "*.md")
         md_file_name = get_file_patten(md_file_path)
+        print(md_file_path)
         md_file_path = os.path.join(folder_path, md_file_name)
         info_file_path = os.path.join(folder_path, 'info.json')
         cover_file_path = os.path.join(folder_path, 'img\\cover.*')
@@ -77,13 +80,14 @@ def update_structure_json():
 def get_title_and_extract_from_md(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
         # 获取title
+        title = "title not found"
         for line in f:
             # 使用正则表达式匹配以#开头的行，并捕获标题内容
             match = re.match(r'^\s*#\s*(.+)', line)
             if match:
                 title = match.group(1)
                 break
-
+        print(title)
         # 读取 Markdown 文件内容
         html = f.read()
         # 去掉列表
