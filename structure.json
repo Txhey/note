@@ -100,7 +100,7 @@
             "abstract": ">This section uses single-file component syntax for code examples Computed values [json](./info.json) [pytorch](../pytorch/pytorch.md) [huawei杯](../“华为杯”研究生数学建模竞赛/“华为杯”数学建模竞赛.md) [Transformer](../教程Tr",
             "tagList": [],
             "createTime": "2024-06-04 13:43:34",
-            "lastModify": "2024-06-14 17:50:09",
+            "lastModify": "2024-06-14 17:57:07",
             "img": "https://raw.githubusercontent.com/Txhey/note/main/main/test/img/cover.png",
             "view": 0
         },
@@ -173,9 +173,9 @@
     ],
     "noteNum": 15,
     "allTagList": [
+        "project",
         "vue",
         "github.io",
-        "project",
         "Stary"
     ]
 }
