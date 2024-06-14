@@ -6,6 +6,10 @@
 
 [json](./info.json)
 
+[../folderName/subFolder/subFolder2/file.md](../folderName/subFolder/subFolder2/file.md)
+
+[../folderName/subFolder/file.md](../folderName/subFolder/file.md)
+
 [pytorch](../pytorch/pytorch.md)
 
 [huawei杯](../“华为杯”研究生数学建模竞赛/“华为杯”数学建模竞赛.md)
