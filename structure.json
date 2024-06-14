@@ -97,10 +97,10 @@
             "folderName": "test",
             "fileName": "test.md",
             "title": "Computed and Watch",
-            "abstract": ">This section uses single-file component syntax for code examples Computed values [pytorch](../pytorch/pytorch.md) [huawei杯](../“华为杯”研究生数学建模竞赛/“华为杯”数学建模竞赛.md) [Transformer](../教程Transformer/教程：Transfo",
+            "abstract": ">This section uses single-file component syntax for code examples Computed values [json](./info.json) [pytorch](../pytorch/pytorch.md) [huawei杯](../“华为杯”研究生数学建模竞赛/“华为杯”数学建模竞赛.md) [Transformer](../教程Tr",
             "tagList": [],
             "createTime": "2024-06-04 13:43:34",
-            "lastModify": "2024-06-11 22:14:59",
+            "lastModify": "2024-06-14 17:50:09",
             "img": "https://raw.githubusercontent.com/Txhey/note/main/main/test/img/cover.png",
             "view": 0
         },
@@ -160,22 +160,22 @@
             "view": 0
         },
         {
-            "folderName": "论文：Attention is All You Need",
+            "folderName": "论文：Attention_is_All_You_Need",
             "fileName": "Attention is All You Need.md",
             "title": "Attention is All You Need",
             "abstract": "Author 几乎都是google公司的人 >作者名字后面的符号意义：> > `†`和`‡`: 这两位不是google的，是在google实习期间完成的工作 > `*`: 代表共同贡献 第一页末尾描述了对于该论文的贡献有介绍：（每个作者做了什么内容） Abstract **原文** Thedominant sequence transduction models are based on comp",
             "tagList": [],
             "createTime": "2024-06-04 13:43:34",
-            "lastModify": "2024-06-04 19:47:22",
-            "img": "https://raw.githubusercontent.com/Txhey/note/main/main/论文：Attention is All You Need/img/cover.jpg",
+            "lastModify": "2024-06-13 21:30:38",
+            "img": "https://raw.githubusercontent.com/Txhey/note/main/main/论文：Attention_is_All_You_Need/img/cover.jpg",
             "view": 0
         }
     ],
     "noteNum": 15,
     "allTagList": [
-        "Stary",
         "vue",
         "github.io",
-        "project"
+        "project",
+        "Stary"
     ]
 }

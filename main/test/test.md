@@ -4,7 +4,7 @@
 
 # Computed values
 
-
+[json](./info.json)
 
 [pytorch](../pytorch/pytorch.md)
 
