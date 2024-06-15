@@ -8,7 +8,7 @@
             "tagList": [],
             "createTime": "2024-06-06 16:37:16",
             "lastModify": "2024-06-06 16:38:18",
-            "img": "https://raw.githubusercontent.com/Txhey/note/main/main/excel/img/None",
+            "img": "https://raw.githubusercontent.com/Txhey/note/main/main/excel/img/cover.png",
             "view": 0
         },
         {
@@ -41,7 +41,7 @@
             "tagList": [],
             "createTime": "2024-06-12 22:08:43",
             "lastModify": "2024-06-12 22:08:43",
-            "img": "https://raw.githubusercontent.com/Txhey/note/main/main/js/img/None",
+            "img": "https://raw.githubusercontent.com/Txhey/note/main/main/js/img/cover.png",
             "view": 0
         },
         {
@@ -52,7 +52,7 @@
             "tagList": [],
             "createTime": "2024-06-08 13:13:04",
             "lastModify": "2024-06-08 13:13:16",
-            "img": "https://raw.githubusercontent.com/Txhey/note/main/main/kaggle/img/None",
+            "img": "https://raw.githubusercontent.com/Txhey/note/main/main/kaggle/img/cover.png",
             "view": 0
         },
         {
@@ -63,7 +63,7 @@
             "tagList": [],
             "createTime": "2024-06-05 14:57:29",
             "lastModify": "2024-06-05 14:59:12",
-            "img": "https://raw.githubusercontent.com/Txhey/note/main/main/numpy/img/None",
+            "img": "https://raw.githubusercontent.com/Txhey/note/main/main/numpy/img/cover.png",
             "view": 0
         },
         {
@@ -74,7 +74,7 @@
             "tagList": [],
             "createTime": "2024-06-04 20:16:22",
             "lastModify": "2024-06-07 15:26:42",
-            "img": "https://raw.githubusercontent.com/Txhey/note/main/main/pytorch/img/None",
+            "img": "https://raw.githubusercontent.com/Txhey/note/main/main/pytorch/img/cover.jpg",
             "view": 0
         },
         {
@@ -112,7 +112,7 @@
             "tagList": [],
             "createTime": "2024-06-04 20:27:16",
             "lastModify": "2024-06-07 16:49:13",
-            "img": "https://raw.githubusercontent.com/Txhey/note/main/main/Transformer/img/None",
+            "img": "https://raw.githubusercontent.com/Txhey/note/main/main/Transformer/img/cover.png",
             "view": 0
         },
         {
@@ -123,7 +123,7 @@
             "tagList": [],
             "createTime": "2024-06-04 20:07:51",
             "lastModify": "2024-06-04 20:26:16",
-            "img": "https://raw.githubusercontent.com/Txhey/note/main/main/Transformer pytorch实现/img/None",
+            "img": "https://raw.githubusercontent.com/Txhey/note/main/main/Transformer pytorch实现/img/cover.png",
             "view": 0
         },
         {
@@ -134,7 +134,7 @@
             "tagList": [],
             "createTime": "2024-06-12 12:40:32",
             "lastModify": "2024-06-12 14:03:06",
-            "img": "https://raw.githubusercontent.com/Txhey/note/main/main/vue/img/None",
+            "img": "https://raw.githubusercontent.com/Txhey/note/main/main/vue/img/cover.png",
             "view": 0
         },
         {
@@ -145,7 +145,7 @@
             "tagList": [],
             "createTime": "2024-06-04 19:14:25",
             "lastModify": "2024-06-04 17:01:59",
-            "img": "https://raw.githubusercontent.com/Txhey/note/main/main/”华为杯“数学建模/img/None",
+            "img": "https://raw.githubusercontent.com/Txhey/note/main/main/”华为杯“数学建模/img/cover.png",
             "view": 0
         },
         {
@@ -156,7 +156,7 @@
             "tagList": [],
             "createTime": "2024-06-07 19:12:01",
             "lastModify": "2024-06-08 18:55:04",
-            "img": "https://raw.githubusercontent.com/Txhey/note/main/main/学习目标/img/None",
+            "img": "https://raw.githubusercontent.com/Txhey/note/main/main/学习目标/img/cover.jpg",
             "view": 0
         },
         {
@@ -173,9 +173,9 @@
     ],
     "noteNum": 15,
     "allTagList": [
-        "github.io",
-        "project",
         "vue",
-        "Stary"
+        "Stary",
+        "github.io",
+        "project"
     ]
 }
