@@ -149,6 +149,17 @@
             "view": 0
         },
         {
+            "folderName": "六级",
+            "fileName": "六级.md",
+            "title": "六级笔记总结",
+            "abstract": "",
+            "tagList": [],
+            "createTime": "2024-06-17 21:49:14",
+            "lastModify": "2024-06-16 14:40:42",
+            "img": "https://raw.githubusercontent.com/Txhey/note/main/main/六级/img/None",
+            "view": 0
+        },
+        {
             "folderName": "学习目标",
             "fileName": "学习目标.md",
             "title": "学习内容和目标总结",
@@ -197,14 +208,14 @@
             "view": 0
         }
     ],
-    "noteNum": 17,
+    "noteNum": 18,
     "allTagList": [
-        "Transformer",
-        "project",
-        "论文",
-        "Stary",
-        "vue",
         "attention",
-        "github.io"
+        "github.io",
+        "论文",
+        "vue",
+        "Stary",
+        "project",
+        "Transformer"
     ]
 }
