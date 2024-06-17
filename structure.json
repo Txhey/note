@@ -6,7 +6,7 @@
             "title": "excel 教程及技巧",
             "abstract": "插入正太分布的随机值 `mean`: 均值 * `standard_dav`: 方差",
             "tagList": [],
-            "createTime": "2024-06-06 16:37:16",
+            "createTime": "2024-06-17 21:40:15",
             "lastModify": "2024-06-06 16:38:18",
             "img": "https://raw.githubusercontent.com/Txhey/note/main/main/excel/img/cover.png",
             "view": 0
@@ -17,18 +17,18 @@
             "title": "奇思妙想创意总结",
             "abstract": "NLP 虽然文字是序列数据，但是我们平时使用文字都是通过看，也就是文字其实是二维数据，比如字体大小、双引号、周围空格、重复出现等都会导致我们对某个文字或者某个词的关注增加，如果采用听文字的方式，也就变成了间隔、语调、音量、前面的内容预警（我喜欢的人是：***\\****） 所以其实可以尝试使用二维网络，类似图片，加粗的文字占用更多的空间（其他文字1×1，加粗1×2）或者其他方式。一行文字就是一行数据",
             "tagList": [],
-            "createTime": "2024-06-04 13:43:34",
+            "createTime": "2024-06-17 21:40:15",
             "lastModify": "2024-06-07 19:10:57",
             "img": "https://raw.githubusercontent.com/Txhey/note/main/main/Fantastic idea/img/cover.jpg",
             "view": 0
         },
         {
             "folderName": "git",
-            "fileName": "git.md",
+            "fileName": "Git.md",
             "title": "Git",
             "abstract": "查看git版本 文件状态 config 查看全局配置 修改用户名和密码 修改代理 创建仓库 初始化一个新的仓库 从远端服务器克隆一个过来 工作区域 工作区：working Directory 暂存区：Staging Area/Index 本地仓库： Local Repository 状态： Untrack 未跟踪：还没被git管理的文件 Unmodified 未修改 Modified 已修改 St",
             "tagList": [],
-            "createTime": "2024-06-04 13:43:34",
+            "createTime": "2024-06-17 21:40:15",
             "lastModify": "2024-06-04 13:43:34",
             "img": "https://raw.githubusercontent.com/Txhey/note/main/main/git/img/cover.png",
             "view": 0
@@ -39,7 +39,7 @@
             "title": "title not found",
             "abstract": "",
             "tagList": [],
-            "createTime": "2024-06-12 22:08:43",
+            "createTime": "2024-06-17 21:40:15",
             "lastModify": "2024-06-12 22:08:43",
             "img": "https://raw.githubusercontent.com/Txhey/note/main/main/js/img/cover.png",
             "view": 0
@@ -50,7 +50,7 @@
             "title": "kaggle 教程",
             "abstract": "",
             "tagList": [],
-            "createTime": "2024-06-08 13:13:04",
+            "createTime": "2024-06-17 21:40:15",
             "lastModify": "2024-06-08 13:13:16",
             "img": "https://raw.githubusercontent.com/Txhey/note/main/main/kaggle/img/cover.png",
             "view": 0
@@ -61,7 +61,7 @@
             "title": "numpy教程",
             "abstract": "初始化",
             "tagList": [],
-            "createTime": "2024-06-05 14:57:29",
+            "createTime": "2024-06-17 21:40:15",
             "lastModify": "2024-06-05 14:59:12",
             "img": "https://raw.githubusercontent.com/Txhey/note/main/main/numpy/img/cover.png",
             "view": 0
@@ -72,7 +72,7 @@
             "title": "pytorch教程",
             "abstract": "nn 数据结构 nn.Parameter 用于定义模型中需要学习的参数 为什么使用`nn.Parameter` -显式声明参数：通过 `nn.Parameter` 可以显式地声明模型的参数，这对于理解模型结构和调试非常有帮助。-自动优化：将张量包装为 `nn.Parameter` 后，优化器会自动识别这些参数并在训练过程中更新它们的值。 nn.ModuleList pytorch中的一个容器，类似",
             "tagList": [],
-            "createTime": "2024-06-04 20:16:22",
+            "createTime": "2024-06-17 21:40:15",
             "lastModify": "2024-06-07 15:26:42",
             "img": "https://raw.githubusercontent.com/Txhey/note/main/main/pytorch/img/cover.jpg",
             "view": 0
@@ -88,7 +88,7 @@
                 "vue",
                 "github.io"
             ],
-            "createTime": "2024-06-04 13:43:34",
+            "createTime": "2024-06-17 21:40:15",
             "lastModify": "2024-06-08 21:22:13",
             "img": "https://raw.githubusercontent.com/Txhey/note/main/main/Stary/img/cover.svg",
             "view": 0
@@ -99,7 +99,7 @@
             "title": "Computed and Watch",
             "abstract": ">This section uses single-file component syntax for code examples Computed values [json](./info.json) [../folderName/subFolder/subFolder2/file.md](../folderName/subFolder/subFolder2/file.md) [../folde",
             "tagList": [],
-            "createTime": "2024-06-04 13:43:34",
+            "createTime": "2024-06-17 21:40:15",
             "lastModify": "2024-06-14 19:49:39",
             "img": "https://raw.githubusercontent.com/Txhey/note/main/main/test/img/cover.png",
             "view": 0
@@ -110,7 +110,7 @@
             "title": "Transformer 模型分析",
             "abstract": "整体结构 Input 输入 Transformer模型的输入数据形状通常是三维张量 `batch_size`是批次大小，表示同时处理的样本数量。 `sequence_length`是序列长度，表示每个文本序列中词的数量或字符的数量。 `embedding_dim`是嵌入维度，表示词嵌入的维度或字符嵌入的维度。 Embedding 词嵌入层 将词用向量表示。 **代码** `vocab_size`:",
             "tagList": [],
-            "createTime": "2024-06-04 20:27:16",
+            "createTime": "2024-06-17 21:40:15",
             "lastModify": "2024-06-07 16:49:13",
             "img": "https://raw.githubusercontent.com/Txhey/note/main/main/Transformer/img/cover.png",
             "view": 0
@@ -121,7 +121,7 @@
             "title": "Transformer pytorch实现",
             "abstract": "符号定义： N : Encoder和Decoder的层数，默认为6 src tgt src_mask tgt_mask",
             "tagList": [],
-            "createTime": "2024-06-04 20:07:51",
+            "createTime": "2024-06-17 21:40:15",
             "lastModify": "2024-06-04 20:26:16",
             "img": "https://raw.githubusercontent.com/Txhey/note/main/main/Transformer pytorch实现/img/cover.png",
             "view": 0
@@ -132,7 +132,7 @@
             "title": "## 问题总结",
             "abstract": "你这个系统用的什么（框架/库）做的？ 用的vue（是一种[渐进式](渐进式)框架，[组件式](# 组件式)开发）,页面设计使用了`element-plus`库。 用的什么工具开发？ 用的`VScode`（读音：v s code 全程： visual studio code） 使用的什么数据库？ 我们没有使用数据库，登录和注册功能是将账号密码当成**变量**存储在项目里。 具体：为了简单，我们将账号",
             "tagList": [],
-            "createTime": "2024-06-12 12:40:32",
+            "createTime": "2024-06-17 21:40:15",
             "lastModify": "2024-06-12 14:03:06",
             "img": "https://raw.githubusercontent.com/Txhey/note/main/main/vue/img/cover.png",
             "view": 0
@@ -143,7 +143,7 @@
             "title": "“华为杯”研究生数学建模竞赛",
             "abstract": "竞赛设立一、二、三等奖、华为专项奖、数模之星、数模之星提名奖、成功参赛奖、参赛单位优秀组织奖等 总共`34.5%`的人可以得奖，其中： -一等奖：`1.5%`-二等奖：`13%`-三等奖：`20%` 题型分布 华为专项题（2题） 比较偏工科 2022： `A`题：移动场景超分辨定位问题 `B`题：方形件组批优化问题 最优化题目（2题） 比较偏统计 2022： `C`题：汽车制造涂装-总装缓存调序区",
             "tagList": [],
-            "createTime": "2024-06-04 19:14:25",
+            "createTime": "2024-06-17 21:40:15",
             "lastModify": "2024-06-04 17:01:59",
             "img": "https://raw.githubusercontent.com/Txhey/note/main/main/”华为杯“数学建模/img/cover.png",
             "view": 0
@@ -154,7 +154,7 @@
             "title": "学习内容和目标总结",
             "abstract": "学习目标 英语 论文专业英语 六级 AI 吉他 电子琴 种花 学习内容总结（未分类） Seaborn https://seaborn.pydata.org/examples/ python，Seaborn是一个强大的数据可视化工具，通过简洁的接口和丰富的功能，可以帮助用户更轻松地进行数据分析和展示。 学习目标总结 面向公共大数据的可信大模型关键技术研究与应用 可信问题： 宣传滥用 propagan",
             "tagList": [],
-            "createTime": "2024-06-07 19:12:01",
+            "createTime": "2024-06-17 21:40:15",
             "lastModify": "2024-06-08 18:55:04",
             "img": "https://raw.githubusercontent.com/Txhey/note/main/main/学习目标/img/cover.jpg",
             "view": 0
@@ -164,18 +164,36 @@
             "fileName": "Attention is All You Need.md",
             "title": "Attention is All You Need",
             "abstract": "Author 几乎都是google公司的人 >作者名字后面的符号意义：> > `†`和`‡`: 这两位不是google的，是在google实习期间完成的工作 > `*`: 代表共同贡献 第一页末尾描述了对于该论文的贡献有介绍：（每个作者做了什么内容） Abstract **原文** Thedominant sequence transduction models are based on comp",
-            "tagList": [],
-            "createTime": "2024-06-04 13:43:34",
+            "tagList": [
+                "attention",
+                "Transformer",
+                "论文"
+            ],
+            "createTime": "2024-06-17 21:40:15",
             "lastModify": "2024-06-13 21:30:38",
             "img": "https://raw.githubusercontent.com/Txhey/note/main/main/论文：Attention_is_All_You_Need/img/cover.jpg",
             "view": 0
+        },
+        {
+            "folderName": "论文：BERT",
+            "fileName": "论文：BERT.md",
+            "title": "论文： BERT： Pre-training of Deep Bidirectional Transformers for Language Understanding",
+            "abstract": "参考 [BERT论文逐段精读[论文精读]](https://www.bilibili.com/video/BV1PL411M7eQ/?spm_id_from=333.337.search-card.all.click&vd_source=550e50f36bb6f32ba43eb2af3f8307be) **BERT**:**B**idirectional **E**ncoder **R**epr",
+            "tagList": [],
+            "createTime": "2024-06-17 20:11:44",
+            "lastModify": "2024-06-17 20:57:31",
+            "img": "https://raw.githubusercontent.com/Txhey/note/main/main/论文：BERT/img/None",
+            "view": 0
         }
     ],
-    "noteNum": 15,
+    "noteNum": 16,
     "allTagList": [
         "vue",
-        "Stary",
+        "project",
+        "Transformer",
+        "attention",
+        "论文",
         "github.io",
-        "project"
+        "Stary"
     ]
 }

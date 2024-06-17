@@ -35,7 +35,7 @@ def update_structure_json():
         folder_path = os.path.join(".\\main", s)
         md_file_path = os.path.join(folder_path, "*.md")
         md_file_name = get_file_patten(md_file_path)
-        print(md_file_path)
+        # print(md_file_path)
         md_file_path = os.path.join(folder_path, md_file_name)
         info_file_path = os.path.join(folder_path, 'info.json')
         cover_file_path = os.path.join(folder_path, 'img\\cover.*')
@@ -70,7 +70,7 @@ def update_structure_json():
         "noteNum": len(file_info_list),
         "allTagList": list(all_tag_set)
     }
-    print(json_data)
+    # print(json_data)
     # 将 JSON 数据写入文件
     with open("structure.json", "w", encoding="utf-8") as f:
         json.dump(json_data, f, indent=4, ensure_ascii=False)
@@ -87,7 +87,7 @@ def get_title_and_extract_from_md(file_path):
             if match:
                 title = match.group(1)
                 break
-        print(title)
+        # print(title)
         # 读取 Markdown 文件内容
         html = f.read()
         # 去掉列表
