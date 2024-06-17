@@ -160,6 +160,17 @@
             "view": 0
         },
         {
+            "folderName": "立创开发板·泰山派RK3566",
+            "fileName": "立创开发板·泰山派RK3566.md",
+            "title": "立创开发板·泰山派RK3566 教程",
+            "abstract": "目录 第一章 简介 烧录Ubuntu固件 准备ubuntu的img镜像文件 （我下载后放在了[D:\\Code_Download\\Linux\\ubuntu\\ubuntu20.04_hdmi_20231130_update.img](D:\\Code_Download\\Linux\\ubuntu)） 使用烧录工具（`RKDevTool_Release_v2.92`）进行烧录 首先进入loader模式 按住",
+            "tagList": [],
+            "createTime": "2024-06-16 16:20:53",
+            "lastModify": "2024-06-17 19:22:41",
+            "img": "https://raw.githubusercontent.com/Txhey/note/main/main/立创开发板·泰山派RK3566/img/None",
+            "view": 0
+        },
+        {
             "folderName": "论文：Attention_is_All_You_Need",
             "fileName": "Attention is All You Need.md",
             "title": "Attention is All You Need",
@@ -186,14 +197,14 @@
             "view": 0
         }
     ],
-    "noteNum": 16,
+    "noteNum": 17,
     "allTagList": [
-        "vue",
-        "project",
         "Transformer",
-        "attention",
+        "project",
         "论文",
-        "github.io",
-        "Stary"
+        "Stary",
+        "vue",
+        "attention",
+        "github.io"
     ]
 }
